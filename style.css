@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+
+/* Centered Heading Styles */
+.styled-heading {
+    font-size: 2rem; /* Adjust heading size */
+    color: #444; /* Dark gray for readability */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    text-align: center; /* Centers the text */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    margin-bottom: 30px; /* Adds space below the heading */
+    padding: 10px; /* Adds padding for spacing */
+    display: inline-block; /* Ensures inline centering for decoration */
+    position: relative; /* Enables pseudo-element positioning */
+}
+
+/* Decorative Bottom Border */
+.styled-heading::after {
+    content: ""; /* Decorative element */
+    display: block;
+    width: 50%; /* Half-width underline */
+    height: 3px; /* Thickness of the line */
+    margin: 10px auto 0; /* Centered underline */
+    background-color: #007BFF; /* Blue color */
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    width: 100%;
+}
+
+/* Ad Containers */
+.ad-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ad-label {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Line by Line Layout */
+.webadBanner {
+    width: 100%;
+    max-width: 1010px;
+    /* Max width defined for largest banner */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Placeholder Styling */
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* Adjust based on individual ad dimensions */
+    color: #666;
+    font-size: 1rem;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .webadBanner {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .placeholder {
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation */
+.navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #ff523b;
+}
+
+.cart-item {
+    margin-bottom: 1rem;
+}
+
+/* Banner */
+.banner-image {
+    background: url('./img/car-1300629_1280.png') no-repeat center center / cover;
+    min-height: 600px;
+    padding: auto;
+    margin: auto;
+}
+
+/* Feature Products Card */
+.card-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .banner-image {
+        min-height: 300px;
+        /* Adjust banner image for smaller devices */
+    }
+}

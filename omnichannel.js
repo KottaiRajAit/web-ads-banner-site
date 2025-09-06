@@ -2,7 +2,7 @@
  * Set the API key
  * @param {string} ochnkey - The API key
  */
-let ochnkey = '072f34176f42a855da5ff3b1';
+let ochnkey = '5st2mbcxmip23kc8tnplfvrzk';
 // let ochnkey = 'PFDgJ4S4SCdU8fN85dC5VbPk'; RIMI
 // let ochnkey = 'jtxkkvu39rkc3wuy4s6xns1z6';
 var enableLogging = true;
